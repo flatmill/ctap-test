@@ -127,7 +127,7 @@ if not selected_credentials:
 
 # Delete credential
 if questionary.confirm("Are you sure?", default=False).ask():
-    #cred_mgmt.delete_cred(selected_credentials.cred_id)
+    cred_mgmt.delete_cred(selected_credentials.cred_id)
     print("Done.")
 else:
     print("Canceled.")
